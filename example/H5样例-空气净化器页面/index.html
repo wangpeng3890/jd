@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript" src="http://storage.360buyimg.com/devh5/1431152228724_jquery.js"></script>
+<script type="text/javascript" src="http://storage.360buyimg.com/devh5/1431576139678_jdsmart-1.0.0.js"></script>
+<title>空气净化器</title>
+<style>
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; height:100%;}
+*{-webkit-tap-highlight-color:transparent;outline:0;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline}
+i,em{font-style:normal}
+ol,ul{list-style:none}
+input,select,button,h1,h2,h3,h4,h5,h6{font-size:100%;font-family:inherit}
+a,a:visited{text-decoration:none;color:#333}
+body{margin:0 auto; min-width:320px; max-width:640px; position:relative;height:100%;background:#eef2f7;font-size:14px;font-family:Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;line-height:1.5;color:#1e1e1e;-webkit-text-size-adjust:100% !important;-webkit-user-select:none;user-select:none; position:relative;}
+img{ width:100%; height:auto;border:none; interpolation-mode: bicubic;border:0;vertical-align:top}
+.txt-center{ text-align:center;}
+.txt-justify{ text-align:justify; text-justify:inter-ideograph;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,div,p,ul,dl,dt,dd{display:block;padding:0px; margin:0px auto; border:none;}
+a,button,input,i{-webkit-tap-highlight-color:rgba(0,0,0,0); -moz-tap-highlight-color:rgba(0,0,0,0); -ms-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);} 
+section{ width:640px; position:relative;background:#fff}
+.yellow{ color:#ffff26}
+.ht50{ height:50px;}
+.gray{-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);filter: grayscale(100%); filter: gray; opacity:.6}
+
+.state{ overflow:hidden; width:90%; position:relative; padding:10px 0;}
+.state dl{ float:left; overflow:hidden; width:25%; height:60px; padding:5px 0; text-align:center;}
+.state dl dt{ font-size:16px;}
+.state dl dt.green{color:#26da83}
+.state dl dd{ padding:5px 0; color:#26da83}
+.state dl.cs dd{ font-size:40px; line-height:40px; text-align:right;-webkit-transform:scale(1,1.8);}
+.state .wendu{ width:200px; position:absolute; top:0px; left:50%; margin-left:-100px; text-align:center; color:#26da83; font-size:18px;}
+.state .wendu span{ font-size:50px;}
+
+h1.title{ padding:2% 4%; background:#eef2f7;border-bottom:#d4d9de 1px solid; border-top:#d4d9de 1px solid}
+.tempbox{ width:100%; overflow:hidden;}
+.tempbox li{ float:left;  width:50%; margin-left:-1px; border-left:#d4d9de 1px solid}
+.tempbox li button{ width:100%; border:0; padding:10% 0; background:#fff}
+.tempbox li button img{ width:12%; border:0; background:#fff}
+
+.pattern{ width:70%; position:relative; padding:20px 0 10px; }
+.patterncon{ width:100%; height:0px; position:absolute; position:20px; height:8px; border-bottom:#e3e3e3 4px solid}
+.pattern ul{ width:118%; overflow:hidden; margin-left:-9%}
+.pattern ul li{ float:left; width:20%; overflow:hidden;}
+.pattern ul li em{ display:block; width:16px; height:16px; border-radius:50%; margin:auto; border:#fff 2px solid; background:#e3e3e3;}
+.pattern ul li .radio { display:none; }
+.pattern ul li .trigger {cursor: pointer;position: relative; display:block;width:70%; line-height:34px;border-radius:8px;  -webkit-transition:background .15s linear;transition:background .15s linear; text-align:center;margin:auto; }
+.pattern ul li .radio:checked + .trigger{ color:#26da83}
+.pattern ul li .radio:checked + .trigger em{ background:#26da83}
+
+
+.func{ overflow:hidden}
+.func li{ float:left; width:25%; padding:3% 0 2%; border-left:#d4d9de 1px solid; margin-left:-1px; text-align:center}
+.func li em{ display:block; width:50px; height:50px; margin:auto}
+.func li em.ico1{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1501/230/1043303931/2640/ea8f5d43/55b87e8cN51a030b3.png) no-repeat center; background-size:80%}
+.func li em.ico2{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1396/76/1029175335/2553/77b7a266/55b87e8cN9b925035.png) no-repeat center; background-size:80%}
+.func li em.ico3{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1411/273/1048799345/3371/39cca573/55b87e8cN209a6455.png) no-repeat center; background-size:80%}
+.func li em.ico4{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1387/130/1033680551/2039/c9fe8527/55b87e8cN2b8119df.png) no-repeat center; background-size:80%}
+.func li em.ico5{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1693/184/880392016/4016/204d4dbf/55b87e8dN8b51b7bf.png) no-repeat center; background-size:94%}
+.func li em.ico6{ background:url(http://img30.360buyimg.com/smartcloud/jfs/t1282/64/1157591693/2750/675d004/55b87e8dNe91dd132.png) no-repeat center; background-size:80%}
+.func .radio { display:none; }
+.func .trigger {cursor: pointer;position: relative; display:block;width:90%; line-height:34px;  -webkit-transition:background .15s linear;transition:background .15s linear; text-align:center;margin:auto; }
+.func .radio:checked + .trigger{ color:#26da83}
+.func .radio:checked + .trigger em.ico1{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1699/155/877696399/2684/ee40810a/55b87e8cN219581d0.png) no-repeat center; background-size:80%}
+.func .radio:checked + .trigger em.ico2{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1582/325/1067406770/2551/c146bb81/55b87e8cN87654225.png) no-repeat center; background-size:80%}
+.func .radio:checked + .trigger em.ico3{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1420/198/1041364164/3373/25ce7871/55b87e8cN51ba7da7.png) no-repeat center; background-size:80%}
+.func .radio:checked + .trigger em.ico4{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1282/47/1114084070/2037/77af65f5/55b87e8cNb640255f.png) no-repeat center; background-size:80%}
+.func .radio:checked + .trigger em.ico5{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1453/31/1029692469/4007/51edc41e/55b87e8dN816f135e.png) no-repeat center; background-size:94%}
+.func .radio:checked + .trigger em.ico6{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1315/196/1099682900/2808/c1e64ca/55b87e8dN48499639.png) no-repeat center; background-size:80%}
+.time{border-top:#d4d9de 1px solid;border-bottom:#d4d9de 1px solid;}
+.time li{ width:100%; height:60px;}
+.time li em{ display:inline-block; margin:0 10px -20px;}
+.time .btn{-webkit-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.time .btn em.ico5{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1693/184/880392016/4016/204d4dbf/55b87e8dN8b51b7bf.png) no-repeat center; background-size:94%}
+.time .on{ color:#26da83; }
+.time .on em.ico5{background:url(http://img30.360buyimg.com/smartcloud/jfs/t1453/31/1029692469/4007/51edc41e/55b87e8dN816f135e.png) no-repeat center; background-size:94%}
+.no_link{ height:40px; line-height:40px; text-align:center; background:#727272; text-align:center; color:#fff; position:relative; z-index:9999}
+
+.footbut{ width:640px; position:fixed; bottom:0; overflow:hidden; z-index:99; box-shadow:#999 1px 1px 5px}
+.footbut button{ width:100%; height:50px; border:0; position:relative; text-align:center; color:#000; background:#fff; font-size:16px;tap-highlight-color:rgba(255,255,255,.7);-webkit-tap-highlight-color:rgba(255,255,255,.7)}
+.footbut button:active{ background:rgba(255,255,255,.7)}
+
+.mengban{ width:100%; height:100%; display:none; overflow:hidden; text-indent:-9999px; position:fixed; left:0; top:0; z-index:999; background:rgba(0,0,0,.4)}
+.mengban_off{ width:100%; height:100%; display:none; overflow:hidden; text-indent:-9999px; position:fixed; left:0; top:0; z-index:9; background:rgba(0,0,0,0)}
+
+@media (max-width:375px){}
+@media  (max-width:340px){}
+@media (max-height:480px){}
+@media (max-width:640px){
+section,header{ width:100%; }
+.footbut,.fot_nav{ width:100%}
+}
+.loader{ width:100%; height:100%; position:fixed; top:50px; left:0; z-index:9999; background:rgba(255,255,255,.0); }
+.ball-beat{ width:100px; overflow:hidden; text-align:center; position:fixed; height:60px; padding-top:40px; top:40%; left:50%; margin-left:-50px; z-index:9999; background:rgba(0,188,61,.7); border-radius:50%;}
+
+.ball-beat > div {background-color: #fff;width: 15px;height: 15px;border-radius: 100%;margin: 2px;-webkit-animation-fill-mode: both;
+ animation-fill-mode: both; display: inline-block; -webkit-animation: ball-beat 0.7s 0s infinite linear;animation: ball-beat 0.7s 0s infinite linear; }
+.ball-beat > div:nth-child(2n-1) {-webkit-animation-delay: 0.35s !important;animation-delay: 0.35s !important; }
+@-webkit-keyframes ball-beat {
+  50% {opacity: 0.2;-webkit-transform: scale(0.75);transform: scale(0.75); }
+  100% { opacity: 1;-webkit-transform: scale(1);transform: scale(1); } }
+@keyframes ball-beat {
+  50% {opacity: 0.2;-webkit-transform: scale(0.75);transform: scale(0.75); }
+  100% {opacity: 1;-webkit-transform: scale(1);transform: scale(1); } }
+
+</style>
+</head>
+<body>
+<!---->
+<section>
+    <div class="state">
+    	<dl>
+       		<dt>风速</dt>
+           <dd id="wtext">三档</dd> 
+       	</dl>
+    	<dl class="cs">
+       		<dd id="ptext">100</dd>
+       	</dl>
+    	<dl>
+       		<dt class="green">良</dt>
+           <dd>μm/m3</dd> 
+       	</dl>
+    	<dl>
+       		<dt>滤网剩余</dt>
+           <dd id="ltext">80%</dd> 
+       	</dl>
+    	<dl>
+       		<dt>温度</dt>
+           <dd id="ttext">20℃</dd> 
+       	</dl>
+    	<dl>
+       		<dt>湿度</dt>
+           <dd id="htext">40%RH</dd> 
+       	</dl>
+    	<dl>
+       		<dt>模式</dt>
+           <dd id="mtext">睡眠</dd> 
+       	</dl>
+    	<dl>
+       		<dt>负离子</dt>
+           <dd id="jtext">开</dd> 
+       	</dl>
+    </div>
+    <div id="page1">
+        <!--风速选择-->
+        <h1 class="title">风速选择</h1>
+        <div class="pattern">
+            <div class="patterncon"></div>
+            <ul>
+                <li>
+                    <input onClick="mode(1)" id="radio_1" class="radio" name="radio" type="radio" checked />
+                   <label for="radio_1" class="trigger"><em></em>一档</label>  
+                </li>
+                <li>
+                    <input onClick="mode(2)" id="radio_2" class="radio" name="radio" type="radio" />
+                   <label for="radio_2" class="trigger"><em></em>二档</label>  
+                </li>
+                <li>
+                    <input onClick="mode(3)" id="radio_3" class="radio" name="radio" type="radio" />
+                   <label for="radio_3" class="trigger"><em></em>三档</label>  
+                </li>
+                <li>
+                    <input onClick="mode(4)" id="radio_4" class="radio" name="radio" type="radio" />
+                   <label for="radio_4" class="trigger"><em></em>四档</label>  
+                </li>
+                <li>
+                    <input onClick="mode(5)" id="radio_5" class="radio" name="radio" type="radio" />
+                   <label for="radio_5" class="trigger"><em></em>五档</label>  
+                </li>
+           </ul>
+        </div>
+        <!--功能选择-->
+        <h1 class="title">功能选择</h1>
+        <ul class="func">
+            <li>
+                <input onClick="moshi(1)" id="moshi_1" class="radio" name="moshi" type="radio"  />
+               <label for="moshi_1" class="trigger"><em class="ico1"></em>自动</label>  
+            </li>
+            <li>
+                <input onClick="moshi(2)"  id="moshi_2" class="radio" name="moshi" type="radio" />
+               <label for="moshi_2" class="trigger"><em class="ico2"></em>节能</label>  
+            </li>
+            <li>
+                <input onClick="moshi(3)"  id="moshi_3" class="radio" name="moshi" type="radio" />
+               <label for="moshi_3" class="trigger"><em class="ico3"></em>强力</label>  
+            </li>
+            <li>
+                <input onClick="moshi(4)"  id="moshi_4" class="radio" name="moshi" type="radio" />
+               <label for="moshi_4" class="trigger"><em class="ico4"></em>睡眠</label>  
+            </li>
+        </ul>
+        <ul class="func time">
+            <li id="jan" class="btn on"><em class="ico5"></em>负离子</li>
+        </ul>
+    </div>
+</section>
+<div class="ht50"></div>
+<div class="footbut" id="gj" onClick="gj()"><button>关闭</button></div>
+<div class="footbut" id="kj" onClick="kj()" style="display:none"><button>开启</button></div>
+<div class="mengban_off" style="display:none"></div>
+<div class="mengban" style="display:none"></div>
+
+<!--加载动画-->
+<div class="loader" style="display:none">
+	<div class=" ball-beat">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<script>
+JDSMART.ready(function(){
+            showButton(true);
+            getInitData();            
+           setInterval(function(){
+            	getInfo();
+            }, 4000);
+       
+ });       
+        
+	function showButton(flag){
+
+		JDSMART.app.config (		//配置导航按钮隐藏显示
+            {
+                    showBack:flag,   // 返回按钮，false是隐藏，true是显示
+                    showShare:flag,
+                    showMore:flag   // 更多按钮
+					
+            });
+	};
+	function getInitData(){
+    JDSMART.io.initDeviceData(function (suc) {
+    	initData(suc);           
+    });    
+};
+//控制设备
+function controlDevice(command,callback){
+
+    view_wait(); 
+
+    JDSMART.io.controlDevice(  // 控制设备接口: 如开关
+            command,
+            function (suc) {
+                hide_wait(); 
+                if(callback)
+                    callback(suc);
+            },
+            function (error) {
+               toast(error.errorInfo);
+               hide_wait();
+
+
+            }
+    );
+};
+//交互等待动画显示/隐藏
+function view_wait(){
+	$(".loader").show();
+	};
+function hide_wait(){
+	$(".loader").hide();
+	};
+//toast
+function toast(str){
+	JDSMART.app.toast({"message":str},null);
+	}
+
+//获取快照
+function getInfo(){
+    JDSMART.io.getSnapshot(
+            function (suc) {              
+            reflashData(suc);
+            },
+            function (error) {
+                // 执行失败的回调
+ 			toast(error.errorInfo)
+            }
+    );
+
+};
+$(".btn").on("click",function(e){
+	if($(this).attr("class").indexOf("on") >= 0){
+		var command = {
+		"command":[				
+					{
+                        "stream_id": "jan",
+                        "current_value":"off"
+                    }
+                ]		
+		}	
+	controlDevice(command,function(suc){
+	 		$("#jan").attr("class","btn off");
+		});	       		
+	}
+	else{
+		var command = {
+		"command":[				
+					{
+                        "stream_id": "jan",
+                        "current_value":"on"
+                    }
+                ]		
+		}	
+	controlDevice(command,function(suc){
+	 		$("#jan").attr("class","btn on");
+		});	       		
+	}
+});
+function mode(arg){
+	cdate = new Date();
+	ctime = cdate.getTime();
+	var wind;
+	switch(arg){
+		case 1:
+		wind = 'a';
+		break;
+		case 2:
+		wind = 'b';
+		break;
+		case 3:
+		wind = 'c';
+		break;
+		case 4:
+		wind = 'd';
+		break;
+		case 5:
+		wind = 'e';
+		break;
+		}
+	var command = {
+		"command":[				
+					{
+                        "stream_id": "jwi",
+                        "current_value":wind
+                    }
+                ]		
+		}	
+	controlDevice(command,false);	       			
+}
+function moshi(arg){
+	fdate = new Date();
+	ftime = fdate.getTime();
+	var m;
+	switch(arg){
+		case 1:
+		m = 'c';
+		break;
+		case 2:
+		m = 'e';
+		break;
+		case 3:
+		m = 'd';
+		break;
+		case 4:
+		m = 'b';
+		break;
+	}
+	var command = {
+		"command":[				
+					{
+                        "stream_id": "jmo",
+                        "current_value":m
+                    }
+                ]		
+		}	
+	controlDevice(command,false);	       	
+	}
+function gj(){
+	var command = {
+	"command":[				
+					{
+                        "stream_id": "jpw",
+                        "current_value":"off"
+                    }
+                ]		
+		}	
+	controlDevice(command,function(suc){
+	 		$("#page1").addClass("gray");
+			$(".mengban_off,#kj").show();
+			$("#gj").hide();
+		});	            
+	}
+function kj(){
+	var command = {
+	"command":[				
+					{
+                        "stream_id": "jpw",
+                        "current_value":"on"
+                    }
+                ]		
+		}	
+	controlDevice(command,function(suc){
+	 		$("#page1").removeClass("gray");
+			$("#gj").show();
+			$("#kj,.mengban_off").hide();
+		});	            
+	}
+
+var date;
+var now;
+var cdate;
+var ctime = 0;	
+var fdate;
+var ftime = 0;
+function initData(suc){
+if(typeof(suc)=="string"){
+	suc = JSON.parse(suc);
+	}
+	//设备在线状态 status=0 ：不在线 1：在线
+    if(suc.device.status){
+		var status = suc.device.status;
+		if(status == 0){
+			$(".mengban").show();			
+			
+			}else{	
+			$(".mengban").hide();	
+				}
+		} 
+	
+	 $.each(suc["streams"], function(i,val){ 
+  //开关机
+        if(val["stream_id"] == "jpw" && val["current_value"]){
+            var p = val["current_value"];
+			if(p=="on"){
+				$("#page1").removeClass("gray");
+			$("#gj").show();
+			$("#kj,.mengban_off").hide();
+				}else{
+				$("#page1").addClass("gray");
+			$(".mengban_off,#kj").show();
+			$("#gj").hide();		
+					}          
+        }
+		 //空气质量
+	if(val["stream_id"] == "jaq" && val["current_value"]){
+		var r = val["current_value"];
+		if(r == "a"){
+		$(".green").text("优");	
+			}else if(r=="b"){
+			$(".green").text("良");		
+				}else if(r=="c"){
+					$(".green").text("差");
+					}
+		} 
+	//当前温度
+	 if(val["stream_id"] == "jct" && val["current_value"]){ 
+		 var m = val["current_value"];
+		 $("#ttext").text(m+"℃");
+		 }
+		
+	//PM2.5
+	if(val["stream_id"] == "jpm" && val["current_value"]){
+	 	var p = val["current_value"];
+		$("#ptext").text(p);
+		}
+
+	//湿度  
+	if(val["stream_id"] == "jhu" && val["current_value"]){
+		var h = val["current_value"];
+		$("#htext").text(h+"%RH");
+		} 
+	//滤网使用剩余 
+	 if(val["stream_id"] == "jfi" && val["current_value"]){
+		 var m = val["current_value"];
+		 $("#ltext").text(m+"%");
+		 }  
+	//风速 
+	 if(val["stream_id"] == "jwi" && val["current_value"]){
+		  date = new Date();
+		  now = date.getTime();
+		  var w = val["current_value"];
+		  var d;
+		  var i;
+		  switch(w){
+			 case 'a':
+			  d = "一档";
+			  i = 0;
+			  break;
+			  case 'b':
+			  d = "二档";
+			  i = 1;
+			  break;
+			  case 'c':
+			  d = "三档";
+			  i = 2;
+			  break;
+			  case 'd':
+			  d = "四档";
+			  i = 3
+			  break;
+			  case 'e':
+			  d = "五档";
+			  i = 4;
+			  break;
+		  }
+		  if((now-ctime)<3000){
+		  $("#wtext").text(d);
+     	 }else{	
+		 $("#wtext").text(d);
+		 $("input:radio[name='radio']").eq(i).attr("checked",true); 
+		}
+	 }  
+	//模式选择 
+	 if(val["stream_id"] == "jmo" && val["current_value"]){
+		  date = new Date();
+		  now = date.getTime();
+		  var w = val["current_value"];
+		  var d;
+		  var i;
+		  switch(w){
+			 case 'a':
+			  d = "无";
+			  i = -1;
+			  break;
+			  case 'b':
+			  d = "睡眠";
+			  i = 3;
+			  break;
+			  case 'c':
+			  d = "自动";
+			  i = 0;
+			  break;
+			  case 'd':
+			  d = "强力";
+			  i = 2;
+			  break;
+			  case 'e':
+			  d = "节能";
+			  i = 1;
+			  break;
+		  }
+		  if((now-ftime)<3000){
+		  $("#mtext").text(d);
+     	 }else{	
+		 $("#mtext").text(d);
+		 if(i == -1){
+		 $("input:radio[name='moshi']:checked").attr('checked',false);
+		 }else{
+		 $("input:radio[name='radio']").eq(i).attr("checked",true); 
+		 }
+		}
+		 }  
+	//负离子 
+	 if(val["stream_id"] == "jan" && val["current_value"]){
+		 var px = val["current_value"];
+		 if(px=="on"){
+		 $("#jtext").text("开");
+		 $("#jan").attr("class","btn on");
+		 }else{
+		 $("#jtext").text("关");
+		 $("#jan").attr("class","btn off");	 
+			 }
+		 }  	 	 
+    });  
+};
+	
+function reflashData(suc){
+	alert(JSON.stringify(suc));
+	if(typeof(suc)=="string"){
+	suc = JSON.parse(suc);
+	}
+	if(suc.status){
+		var status = suc.status;
+		if(status == 0){			
+			$(".mengban").show();			
+			
+			}else{	
+			$(".mengban").hide();	
+				}
+		}
+	 $.each(suc["streams"], function(i,val){ 
+  //开关机
+        if(val["stream_id"] == "jpw" && val["current_value"]){
+            var p = val["current_value"];
+			if(p=="on"){
+				$("#page1").removeClass("gray");
+			$("#gj").show();
+			$("#kj,.mengban_off").hide();
+				}else{
+				$("#page1").addClass("gray");
+			$(".mengban_off,#kj").show();
+			$("#gj").hide();		
+					}          
+        }
+		 //空气质量
+	if(val["stream_id"] == "jaq" && val["current_value"]){
+		var r = val["current_value"];
+		if(r == "a"){
+		$(".green").text("优");	
+			}else if(r=="b"){
+			$(".green").text("良");		
+				}else if(r=="c"){
+					$(".green").text("差");
+					}
+		} 
+	//当前温度
+	 if(val["stream_id"] == "jct" && val["current_value"]){ 
+		 var m = val["current_value"];
+		 $("#ttext").text(m+"℃");
+		 }
+		
+	//PM2.5
+	if(val["stream_id"] == "jpm" && val["current_value"]){
+	 	var p = val["current_value"];
+		$("#ptext").text(p);
+		}
+
+	//湿度  
+	if(val["stream_id"] == "jhu" && val["current_value"]){
+		var h = val["current_value"];
+		$("#htext").text(h+"%RH");
+		} 
+	//滤网使用剩余 
+	 if(val["stream_id"] == "jfi" && val["current_value"]){
+		 var m = val["current_value"];
+		 $("#ltext").text(m+"%");
+		 }  
+	//风速 
+	 if(val["stream_id"] == "jwi" && val["current_value"]){
+		  date = new Date();
+		  now = date.getTime();
+		  var w = val["current_value"];
+		  var d;
+		  var i;
+		  switch(w){
+			 case 'a':
+			  d = "一档";
+			  i = 0;
+			  break;
+			  case 'b':
+			  d = "二档";
+			  i = 1;
+			  break;
+			  case 'c':
+			  d = "三档";
+			  i = 2;
+			  break;
+			  case 'd':
+			  d = "四档";
+			  i = 3
+			  break;
+			  case 'e':
+			  d = "五档";
+			  i = 4;
+			  break;
+		  }
+		  if((now-ctime)<3000){
+		  $("#wtext").text(d);
+     	 }else{	
+		 $("#wtext").text(d);
+		 $("input:radio[name='radio']").eq(i).attr("checked",true); 
+		}
+	 }  
+	//模式选择 
+	 if(val["stream_id"] == "jmo" && val["current_value"]){
+		  date = new Date();
+		  now = date.getTime();
+		  var w = val["current_value"];
+		  var d;
+		  var i;
+		  switch(w){
+			 case 'a':
+			  d = "无";
+			  i = -1;
+			  break;
+			  case 'b':
+			  d = "睡眠";
+			  i = 3;
+			  break;
+			  case 'c':
+			  d = "自动";
+			  i = 0;
+			  break;
+			  case 'd':
+			  d = "强力";
+			  i = 2;
+			  break;
+			  case 'e':
+			  d = "节能";
+			  i = 1;
+			  break;
+		  }
+		  if((now-ftime)<3000){
+		  $("#mtext").text(d);
+     	 }else{	
+		 $("#mtext").text(d);
+		 if(i == -1){
+		 $("input:radio[name='moshi']:checked").attr('checked',false);
+		 }else{
+		 $("input:radio[name='radio']").eq(i).attr("checked",true); 
+		 }
+		}
+		 }  
+	//负离子 
+	 if(val["stream_id"] == "jan" && val["current_value"]){
+		 var px = val["current_value"];
+		 if(px=="on"){
+		 $("#jtext").text("开");
+		 $("#jan").attr("class","btn on");
+		 }else{
+		 $("#jtext").text("关");
+		 $("#jan").attr("class","btn off");	 
+			 }
+		 }  	 	 
+    });  
+};
+</script>
+</body>
+</html>
+
