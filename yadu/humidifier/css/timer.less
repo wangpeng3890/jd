@@ -1,0 +1,36 @@
+@heigh: `document.body.clientHeight`;
+@width: `document.body.clientWidth`;
+@heightrate: `document.body.clientHeight/1190`;
+@widthrate: `document.body.clientWidth/640`;
+
+wangpeng {height:@heigh; width:@width}
+h1.title{height: @heightrate*60px * 0.5;padding: @heightrate*60px*0.25 @heightrate*60px*0.3; font-size: @heightrate*22px}
+.state {height: @heightrate*290px;}
+.timer {margin-top: @heightrate*100px}
+.lefttime {margin-top: @heightrate*100px}
+.state dl dt{ font-size: @heightrate*30px;}
+.state dl dd{ font-size: @heightrate*26px;}
+.footbut button {height: @heightrate*120px; font-size: @heightrate*40px;}
+
+#pmval {position:relative;left:50%;width: 120px;margin-left: -60px;margin-top: @heightrate * -206px; font-size: @heightrate*100px;}
+#pm25title {position: relative;left:50%;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: 10px;
+    font-size: @heightrate*26px;
+}
+.speedline{display:inline-block; float:left; line-height: @heightrate*180px; vertical-align:middle;}
+.slider.slider-horizontal {
+    float:inline-block;
+		width: 500px;
+    height: 20px;
+    margin-top: 32px;
+}
+#leftspeed{font-size: @widthrate*30px; margin-left: @widthrate*25px; top: @heightrate*70px}
+div.ui-slider{top:@heightrate*80px;width:@widthrate*450px;}
+.ui-slider-popup{position: relative;font-size:@widthrate*30px;top:@heightrate*-90px;height:34px;}
+#rightspeed{font-size:@widthrate*30px;margin-right:@widthrate*25px;top:@heightrate*70px}
+
+input[type='range'] {width: @widthrate*460px;}
+input[type='range']::-webkit-slider-thumb {width: @widthrate*30px; height: @widthrate*30px;margin-top: @widthrate*-12px;}
+input[type='range']::-webkit-slider-runnable-track{height: @widthrate*8px;border-radius: @widthrate*10px;}
